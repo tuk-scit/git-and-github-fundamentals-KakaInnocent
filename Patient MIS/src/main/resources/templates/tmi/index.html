@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="ISO-8859-1">
+<title>Home</title >
+<!-- <style type="text/css">
+nav{
+background-color: red;
+background-image: linear-gradient(to right, red,blue);
+}
+body {
+background-image: url("image1.jpg");
+}
+</style> -->
+<link rel="stylesheet" type="text/css" href="/webjars/bootstrap/css/bootstrap.min.css"/> 
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+
+      <!--Create navigation bar(Header)  -->
+<nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+  <a class="navbar-brand" href="#">PATIENT INFORMATION MANAGEMENT SYSYTEM</a>
+  <!-- <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+ -->
+   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  
+<!--  <a href="#" class="toggle-button">
+ <span class = "bar"></span>
+  <span class = "bar"></span>
+   <span class = "bar"></span>
+ </a> -->
+ 
+  <div class="collapse navbar-collapse" id="collapsibleNavbar">
+    <ul class="navbar-nav ml-auto">
+
+      <li class="nav-item">
+        <h5><a class="nav-link" th:href="@{/app}">MakeAppointment</a></h5>
+      </li>
+      
+<!--       <li class="nav-item">
+       <h5> <a class="nav-link" href="#reviews">Reviews</a></h5>
+      </li> -->
+<!--       <li class="nav-item">
+       <h5> <a class="nav-link" href="#contact">Contact</a></h5>
+      </li> -->
+      <li class="nav-item">
+        <h5><a class="nav-link" th:href="@{/register}">register</a></h5>
+      </li>
+      <li class="nav-item">
+        <h5><a class="nav-link" th:href="@{/login}">Login</a></h5>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" th:href="@{/logout}">Logout</a>
+      </li>
+ 
+
+
+    </ul>
+  </div>
+</nav>
+<br>
+
+   <div class="container text-center" id = "bodys">
+   <div >
+   <h1>Welcome to Home Page</h1>
+   </div>
+
+   </div>
+</body>
+  <footer class="bg-dark text-center text-white">
+  <div class="text-center p-0.3" style="background-color: rgba(0, 0, 0, 0.2);">
+     <p>Copyright &copy;2022 by TMI Colince</p>
+  </div>
+</footer>
+<script type="text/javascript" src="my.js"></script>
+</html>

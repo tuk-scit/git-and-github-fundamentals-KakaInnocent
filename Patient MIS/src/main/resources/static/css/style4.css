@@ -1,0 +1,226 @@
+*{
+	box-sizing: border-box;
+	margin: 0;
+	padding:0;
+	scroll-behavior: smooth;
+
+}
+body{
+    background-image: url("bg_app.jpg");
+    background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	min-height: 100vh;
+	width: 100%;
+	text-align: center;
+}
+ p {
+    font-size: 50px;
+  }
+       
+#home{
+
+
+
+
+}
+#home p{
+	position: absolute;
+	top: 50%;
+	transform: translateX(50%);
+	font-size: 30px;
+	color:black;
+	font-weight: bolder;
+}
+#about{
+	min-height: 100vh;
+	width: 100%;
+	color: white;
+	background-image: url("image2.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+#about h1{
+	background-color: red;
+	color:white;
+	text-align: center;
+	padding:10px;
+}
+#services{
+	min-height: 100vh;
+	width: 100%;
+	color: white;
+	background-image: url("image3.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+#services h1{
+	background-color: red;
+	color:white;
+	text-align: center;
+	padding:10px;
+}
+#register{
+	min-height: 100vh;
+	width: 100%;
+	color: white;
+	background-image: url("image4.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+#register h1{
+	background-color: red;
+	color:white;
+	text-align: center;
+	padding:10px;
+}
+#contact{
+	min-height: 100vh;
+	width: 100%;
+	color: white;
+	background-image: url("image1.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+#contact h1{
+	background-color: red;
+	color:white;
+	text-align: center;
+	padding:10px;
+}
+.Brand-title{
+	font-size: 2rem;
+}
+.navbar{
+	display:flex;
+	justify-content: space-between;
+	align-items: center;
+	background-color: rgb(20, 20, 233);
+	color:white;
+}
+.navbar-links ul {
+	margin:0;
+	padding:0;
+	display:flex;
+}
+.navbar-links li {
+	list-style: none;
+}
+.navbar-links li a{
+	text-decoration: none;
+	color: white;
+	padding: 1rem;
+	display: block;
+}
+.navbar-links li:hover{
+	background-color:red;
+}
+.toggle-button{
+	position:absolute;
+	top: 0.75rem;
+	right: 1rem;
+	display:none;
+	flex-direction: column;
+	justify-content:space-between;
+	width: 30px;
+	height: 21px;
+}
+.toggle-button .bar{
+	height:30px;
+	width: 100%;
+	background-color:white;
+	border-radius: 10px;
+}
+@media( max-width: 500px){
+	.toggle-button{
+		display:flex;
+
+	}
+	.navbar-links{
+		display:none;
+		width: 100%;
+	
+	}
+	.navbar{
+		flex-direction: column;
+		align-items: flex-start;
+	
+	
+	}
+	.navbar-links ul{
+		width: 100%;
+		flex-direction: column;
+	}
+	.navbar-links li{
+		text-align: right;
+	}
+	.navbar-links li a{
+		padding: 1rem 1rem;
+	}
+	.Brand-title{
+		font-size:2rem;
+	}
+	.navbar-links.active{
+		display: flex;
+	}
+}
+.footer-container{
+	background-color:rgb(17, 17, 53);
+	margin:0;
+}
+.footer{
+	padding-bottom: 1rem;
+	width: 100%;
+	color:white;
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+	margin: 0 auto;
+}
+.footer-head{
+	display: flex;
+	flex-direction: column;
+	margin-right: 2rem;
+}
+.footer-head h2{
+      margin-bottom: 1.5rem;
+}
+.footer-head a{
+	color: white;
+	margin-bottom: 0.5rem;
+}
+.footer-head a:hover{
+	color:red;
+}
+.email h2{
+	margin-bottom: 1rem;
+}
+#email-form{
+	width: 250px;
+	height:30px;
+	colour:black;
+	border-radius: 5px;
+	border:none;
+	outline: none;
+}
+#email-form::placeholder{
+	color:#b1b1b1;
+}	
+#email-button{
+	background-color: rgb(236, 28, 108);
+	width: 100px;
+	height:30px;
+	colour:black;
+	border-radius: 5px;
+	border:none;
+	outline: none;
+	color: white;
+}
+#email-button:hover{
+	background-color: blue;
+}
+
