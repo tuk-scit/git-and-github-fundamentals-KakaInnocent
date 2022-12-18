@@ -6,8 +6,6 @@ Managing Patient Data through hard copy is outdated. This solution modernizes th
 ## CONTRIBUTORS
 * Innocent Mambo - SCCI/00782/2019
 
-</br>
-</br>
 This shows the overall **login** page. </br>
 ![user login](https://user-images.githubusercontent.com/61348138/208271127-c6b0cd65-bdfe-461a-8d22-868ef5550686.png)
 </br>
